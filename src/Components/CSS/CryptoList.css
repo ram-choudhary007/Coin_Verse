@@ -1,0 +1,40 @@
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .table-head {
+    background-color: #f1f1f1;
+  }
+  
+  .table-body td,
+  .table-body th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-body tr:hover {
+    background-color: #90abd1;
+  }
+  
+  .price-green {
+    color: #3fc932;
+  }
+  
+  .price-red {
+    color: #fa4545;
+  }
+
+  .star{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+  }
+
+  .yStarBtn{
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  

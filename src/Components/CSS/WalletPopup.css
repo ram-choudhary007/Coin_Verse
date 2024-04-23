@@ -1,0 +1,43 @@
+.WalletPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
+.walletPopBox {
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #222531;
+    border-radius: 20px;
+}
+
+.close_Btn {
+    position: absolute;
+    top: 260px;
+    right: 480px;
+}
+
+/* Adjust the position of the close button */
+.close_Btn button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.transactionBtn {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    }

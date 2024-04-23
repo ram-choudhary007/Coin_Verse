@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.footer{
+  color: white;
+  border-top: 1px solid #3b4d83;
+  padding: 15px;
+  /* background-color: #17171a; */
+  background-color: #111422;
+}
+
+.footer ul{
+  color: #6e7583;
+}
+
+.cryptoVerse{
+  color: white;
+  margin-left: 10px;
+  padding-top: 5px;
+}

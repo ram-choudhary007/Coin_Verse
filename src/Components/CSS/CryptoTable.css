@@ -1,0 +1,129 @@
+/* .crypto-table-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background-color: #0D1421;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: #0D1421;
+    vertical-align: middle;
+  }
+  
+  .table-header{
+    font-size: 20px;
+    background-color:#0D1421;
+    color: white;
+  }
+
+  .table-row{
+    display: flex;
+  }
+
+  .rowWise{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+  }
+  /* .table-row:nth-child(even) {
+    color: white;
+  } */
+  
+  /*
+  .star {
+    width: 20px; 
+    height: 20px; 
+  }
+  
+  .price-green {
+    color: green;
+  }
+  
+  .price-red {
+    color: red;
+  }
+
+.favBtn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+   */
+
+
+
+   .crypto-table-container {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-bottom: 1px solid #40424e; /* Add bottom border to separate rows */
+  }
+  
+  thead {
+    background-color: #0D1421;
+    color: white;
+    border-bottom: 1px solid #40424e;
+  }
+
+  tr{
+    border-bottom: 1px solid #40424e;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+/*   tbody tr:nth-child(even) {
+    background-color: #15202B; 
+  } */
+  
+  tbody tr:hover {
+    background-color: #1E2A3A; 
+  }
+  
+  .favBtn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .star {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+  }
+  
+  .rowWise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: #58a6ff;
+  }
+  
+
+  .rowText{
+    color: white;
+  }
+  

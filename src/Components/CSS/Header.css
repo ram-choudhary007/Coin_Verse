@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #0D1421;
+}
+
+.header ul li a{
+    color: white;
+}
+
+.header ul li .active {
+    color: #6188ff;
+  }
+  
+
+.header ul li a:hover{
+    color: #6188ff;
+}
+
+li {
+    margin: auto;
+    padding: 7.5px;
+    list-style: none;
+    font: 15px;
+}
+
+ul {
+    display: flex;
+}
+
+.logo {
+    height: 40px; 
+    width: 40px; 
+    margin: auto 2px;
+}
+
+.logo_name {
+    margin-left: 2px;
+    display: inline-block; 
+}
+
+.logo_container {
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo_name h2 {
+    margin-left: 5px;
+    padding-top: 4px;
+}
+
+/* Search- icon css */
+
+
+.search_icon {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.searchResultBox{
+    position: absolute;
+    top: 60px;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+
+.search{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+
+.userProfilePhoto{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.userProfileBtn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.LogOutBtn{
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    color: #6188ff;
+    border-color: #6188ff;
+    background-color: #0D1421;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.LogInBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Favourite.js */
+.freefav{
+    color: white;
+}
+
+.container{
+    display: flex;
+}

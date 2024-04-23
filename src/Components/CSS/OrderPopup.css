@@ -1,0 +1,67 @@
+.popup{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
+.popup_box{
+    padding: 15px;
+    margin: 250px 500px;
+    border: 1px solid black;
+    background-color: #222531;
+    border-radius: 20px;
+}
+
+.closeBtn{
+    position: absolute;
+    right: 460px;
+    top: 230px;
+}
+
+.closeBtn button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.input-section{
+    padding: 7px;
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+}
+
+.amount_btns{
+    margin-left: 100px;
+}
+
+.amount_btns button{
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity_btns{
+    padding: 5px;
+    font-weight: bolder;
+    background-color: #b3b4b6;
+    cursor: pointer;
+}
+
+.place_orderBtn{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.place_orderBtn{
+    cursor: pointer;
+}

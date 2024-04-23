@@ -1,0 +1,47 @@
+.prof_Pop{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    text-align: left;
+}
+
+.prof_box{
+    position: absolute;
+    right: -100px;
+    top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #222531;
+    padding: 10px;
+}
+
+.prof_box ul{
+    display: block;
+}
+
+.prof_box ul li{
+    /* padding: 10px; */
+    margin: 5px;
+}
+
+.prof_box ul li a {
+    padding: 2px 90px 0 2px;
+}
+
+.prof_box ul li:hover{
+    background-color: rgb(130, 128, 128);
+    border-radius: 10px;
+}
+
+.logOut_btn{
+    background-color: transparent;
+    padding: 2px 90px 0 2px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.prof_box ul li a:hover{
+    color: white;
+}

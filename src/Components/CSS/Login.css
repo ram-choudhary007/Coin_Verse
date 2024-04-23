@@ -1,0 +1,138 @@
+.loginSignPage{
+    color: white;
+    display: flex;
+    padding-top: 5px;
+}
+
+.login button{
+    margin-right: 15px;
+    background-color: transparent;
+    color: #6188ff;
+    padding: 10px;
+    border: 1px solid #6188ff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signup button{
+    background-color: #3861fa;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #3861fa;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.profile_photo{
+    height: 35px;
+    width: 35px;
+}
+
+.profile_btn{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profile_popup{
+    visibility: hidden;
+}
+
+.profile_btn:hover .profile_popup{
+    visibility: visible;
+}
+
+
+/* LoginPopup.js*/
+
+.loginPopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    color: white;
+}
+
+.loginBox{
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #222531;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    height: 500px;
+}
+
+.Log_close_Btn button{
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    position: absolute;
+    top: 60px;
+    right: 500px;
+}
+
+.forgot_password_btn{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.back_btn{
+    padding: 10px;
+    background-color: #222531;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.action_btn button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.label {
+    margin-top: 15px; 
+    font-weight: bold; 
+    text-align: left;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px 0;
+}
+
+.submit_btn{
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    background-color: #3861fb;
+    border-radius: 10px;
+    margin: 15px auto;
+    border: none;
+    color: #ffffff;
+}
+
+.gooleLoginBtn{
+    background-color: transparent;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}

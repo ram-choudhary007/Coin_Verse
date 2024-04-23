@@ -1,0 +1,80 @@
+/* CryptoDetails.css */
+
+.crypto-details-container {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .crypto_heading {
+    text-align: center;
+    color: white;
+ }
+
+ .crypto_heading p {
+    display: inline;
+    margin-left: 5px;  
+    color: #616e85;
+ }
+
+  .crypto-details-container p{
+    font-size: 20px;
+    margin: 12px;
+  }
+  
+  .crypto-details-info {
+    margin-top: 20px;
+  }
+
+  .crypto-details-info{
+    display: flex;
+    padding: 10px;
+    margin: auto 20px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .left .right{
+    margin: 5px auto;
+  }
+
+  .key_pair{
+    color: #616e85;
+  }
+
+  .key_value{
+    color: white;
+  }
+
+  .chart_info{
+    margin: 10px 300px;
+  }
+
+  .time_btn{
+    margin: 0 auto;
+  }
+
+  .time_btn button{
+    padding: 7px;
+    border-radius: 5px;
+    margin: auto 10px;
+    background-color: #a1a7bb;
+    cursor: pointer;
+  }
+
+  .order_info{
+    text-align: center;
+  }
+
+  .orderBtn button{
+    font-size: 20px;
+    padding: 10px;
+    margin: auto 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
