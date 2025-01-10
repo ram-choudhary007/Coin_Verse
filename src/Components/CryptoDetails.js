@@ -2,15 +2,14 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './CSS/CryptoDetails.css'; 
-// import { CryptoData } from './NewCryptoData';
+import { CryptoData } from './NewCryptoData';
 // import Chart from './Chart';
 import Order from './Order';
-import { useSelector } from 'react-redux';
 
 export default function CryptoDetails() {
   const { id } = useParams();
-  const apiData = useSelector((state) => state.apiData.data);
-  const crypto = apiData.find((crypto) => crypto.id === id);
+  // const apiData = useSelector((state) => state.apiData.data);
+  const crypto = CryptoData.find((crypto) => crypto.id === id);
 
   if (!crypto) {
     return <div className="crypto-details-container">Crypto not found</div>;

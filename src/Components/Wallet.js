@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './CSS/Wallet.css'
 import { useSelector, useDispatch } from 'react-redux';
+import { CryptoData } from './NewCryptoData'; 
 import WalletPopup from './WalletPopup';
 import AssetList from './AssetList';
 import { Link } from 'react-router-dom';
@@ -8,7 +9,7 @@ import { fetchFundTransferDetails } from '../redux/slices/walletSlice';
 
 export default function Wallet() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const apiData = useSelector((state) => state.apiData.data);
+  // const apiData = useSelector((state) => state.apiData.data);
 
   const availToInvestValue = useSelector((state) => state.wallet?.availableAmount);
   const investedAmountValue = useSelector((state) => state.wallet?.amountInvested);
@@ -37,14 +38,14 @@ export default function Wallet() {
     if (Object.keys(assets).length > 0) {
       const calculatedValue = Object.keys(assets).reduce((acc, crypto) => {
         const quantity = assets[crypto].quantity;
-        const currentPrice = apiData.find((data) => data.id === crypto)?.current_price;
+        const currentPrice = CryptoData.find((data) => data.id === crypto)?.current_price;
         return acc + quantity * currentPrice;
       }, 0); // Add initial value of 0 here
       setCurrentValue(calculatedValue);
     }else{
       setCurrentValue(0);
     }
-  }, [assets, apiData]);
+  }, [assets]);
 
   // const totalGain = parseFloat((currentValue - investedAmount).toFixed(2));
   var totalGain;

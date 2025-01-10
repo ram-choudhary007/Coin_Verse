@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
+import { CryptoData } from './NewCryptoData'; 
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchAssets } from '../redux/slices/assetSlice';
 
 const AssetList = () => {
   const assets = useSelector((state) => state.assets?.assetMap || []);
-  const apiData = useSelector((state) => state.apiData.data);
+  // const apiData = useSelector((state) => state.apiData.data);
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth?.userDetails) || null;
   useEffect(() => {
@@ -27,7 +28,7 @@ const AssetList = () => {
     <div>
       <h1 style={{ color: "white" }}>Asset list</h1>
       {Object.keys(assets).map((cryptoId) => {
-        const crypto = apiData.find((crypto) => crypto.id === cryptoId);
+        const crypto = CryptoData.find((crypto) => crypto.id === cryptoId);
         const { amount, quantity, avgPrice } = assets[cryptoId];
         // const profit = (parseFloat(quantity * crypto.current_price).toFixed(2) - parseFloat(amount).toFixed(2)).toFixed(2);
         const profit = (parseFloat(quantity * crypto.current_price) - parseFloat(quantity*avgPrice)).toFixed(2);

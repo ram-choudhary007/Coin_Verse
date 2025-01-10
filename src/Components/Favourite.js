@@ -1,15 +1,15 @@
 import CryptoTable from './CryptoTable';
 import { useSelector, useDispatch } from 'react-redux';
-// import { CryptoData } from './NewCryptoData'; 
+import { CryptoData } from './NewCryptoData'; 
 import { useEffect } from 'react';
 import {fetchFavorites } from '../redux/slices/favouritesSlice'
 
 export default function Favourite() {
   let favouriteCoins = useSelector((state) => state.favourites?.favoriteCoins || []);
   const favoriteCoinIds = favouriteCoins.map(coin => coin.coinId);
-  const apiData = useSelector((state) => state.apiData.data);
+  // const apiData = useSelector((state) => state.apiData.data);
   const dispatch = useDispatch();
-  const filteredCryptoData =  apiData.filter(coin => favoriteCoinIds.includes(coin.id));
+  const filteredCryptoData =  CryptoData.filter(coin => favoriteCoinIds.includes(coin.id));
 
   const user = useSelector((state) => state.auth?.userDetails) || null;
   useEffect(() => {
